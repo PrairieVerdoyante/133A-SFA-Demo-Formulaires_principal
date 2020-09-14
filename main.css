@@ -1,3 +1,40 @@
+/*Importer la police*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 * {
-    border: 2px solid red;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: #fff;
+    color: #333333;
+}
+/* Formulaires */
+form {
+    padding: 2.5%;
+    margin: 0 auto;/*Centrer*/
+    max-width: 600px;
+    background-color: #f4f4f4;
+}
+form > ul {
+    padding: 0;
+}
+form > ul > li {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+form label {
+    display: block;
+    margin-bottom: .2em;
+    cursor: pointer;
+}
+form textarea {
+    height: 200px;
+    /* Pour ne changer que la verticale et pas la largeur */
+    min-width: 100%;
+    max-width: 100%;
+    resize: vertical;
 }
