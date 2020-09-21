@@ -51,6 +51,10 @@ form textarea {
     max-width: 100%;
     resize: vertical;
 }
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
 form button {
     color: white;
     background-color: #599a68;
