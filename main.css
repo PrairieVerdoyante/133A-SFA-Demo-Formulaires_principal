@@ -15,9 +15,14 @@ body {
 /* Formulaires */
 form {
     padding: 2.5%;
-    margin: 0 auto;/*Centrer*/
-    max-width: 600px;
+    /*margin auto: centrer le formulaire */
+    margin: 0 auto 3rem; /* haut droite bas gauche */
+    max-width: 450px;
     background-color: #f4f4f4;
+}
+form > h1:first-child {
+    padding-top: 0;
+    margin-top: 0;
 }
 form > ul {
     padding: 0;
@@ -31,10 +36,29 @@ form label {
     margin-bottom: .2em;
     cursor: pointer;
 }
+form input,
+form textarea {
+    font-family: inherit; /* Force l'héritage de la police */
+    font-size: inherit;
+    color: #000;
+    width: 100%;
+    padding: .5em;
+}
 form textarea {
     height: 200px;
     /* Pour ne changer que la verticale et pas la largeur */
     min-width: 100%;
     max-width: 100%;
     resize: vertical;
+}
+form button {
+    color: white;
+    background-color: #599a68;
+    padding: 1em 2em;
+    border: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+button:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,.5);
 }
