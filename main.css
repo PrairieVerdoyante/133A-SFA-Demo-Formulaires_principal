@@ -20,6 +20,13 @@ form {
     max-width: 450px;
     background-color: #f4f4f4;
 }
+a {
+    text-decoration: none;
+    color: #6ab47b;
+}
+a:hover {
+    color: #599a68;
+}
 form > h1:first-child {
     padding-top: 0;
     margin-top: 0;
@@ -36,6 +43,11 @@ form label {
     margin-bottom: .2em;
     cursor: pointer;
 }
+form label span,
+form legend span {
+    font-weight: bold;
+    color: darkred;
+}
 form input,
 form textarea,
 form select {
@@ -44,6 +56,18 @@ form select {
     color: #000;
     width: 100%;
     padding: .5em;
+}
+form input:focus {
+    box-shadow: 0 0 1.5px 1px deepskyblue;
+}
+form input:invalid,
+textarea:invalid {
+    border-right: darkred solid 3px;
+    box-shadow: none;
+}
+form input:valid,
+textarea:valid {
+    border-right: green;
 }
 form textarea {
     height: 200px;
@@ -61,6 +85,11 @@ form input[type="checkbox"] + label,
 form input[type="radio"] + label {
     display: inline-block;
     padding: .3em 0;
+    color: #ccc;
+}
+form input[type="checkbox"]:checked + label,
+form input[type="radio"]:checked + label {
+    color: #000;
 }
 form button {
     color: white;
