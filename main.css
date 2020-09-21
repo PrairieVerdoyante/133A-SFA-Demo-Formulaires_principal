@@ -37,7 +37,8 @@ form label {
     cursor: pointer;
 }
 form input,
-form textarea {
+form textarea,
+form select {
     font-family: inherit; /* Force l'héritage de la police */
     font-size: inherit;
     color: #000;
@@ -58,10 +59,13 @@ form input[type="radio"] {
 }
 form input[type="checkbox"] + label,
 form input[type="radio"] + label {
-    display: inline;
+    display: inline-block;
+    padding: .3em 0;
 }
 form button {
     color: white;
+    font-family: inherit;
+    font-size: inherit;
     background-color: #599a68;
     padding: 1em 2em;
     border: 0;

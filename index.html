@@ -29,15 +29,64 @@
                 <!-- toujours bien fermer le label textarea ici sans retourner à la ligne -->
             </li>
             <li>
-                <input type="checkbox" name="copie" id="copie" value="fr">
+                <input type="checkbox" name="copie" id="copie">
                 <label for="copie">Je veux recevoir une copie du message</label>
             </li>
             <li>
-                <input type="radio" name="pays" id="pays-fr" value="it">
-                <label for="pays-fr">France</label>
-
-                <input type="radio" name="pays" id="pays-it">
-                <label for="pays-it">Italie</label>
+                <fieldset>
+                    <legend>Sélectionner votre pays d'origine<span>*</span></legend>
+                    <div>
+                        <input required type="radio" name="pays" id="pays-fr" value="fr">
+                        <label for="pays-fr">France</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pays" id="pays-it" value="it" >
+                        <label for="pays-it">Italie</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pays" id="pays-ch" value="ch">
+                        <label for="pays-ch">Suisse</label>
+                    </div>
+                </fieldset>
+            </li>
+            <li>
+                <!--liste -->
+                <label for="destination">
+                    Selectionner votre destination favorite
+                    <span>*</span>
+                </label>
+                <select required name="destination" id="destination">
+                    <!-- premier choix: option avec une chaîne vide pour faire un label --->
+                    <option value="">-- Sélectionnez une destination --</option>
+                    <optgroup label="Europe">
+                        <option value="fr">France</option>
+                        <option value="ch">Suisse</option>
+                        <option value="it">Italie</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="br">Brésil</option>
+                        <option value="ca">Canada</option>
+                        <option value="us">Etats-Unis</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <!-- Groupe de cases à cocher -->
+                <fieldset>
+                    <legend>Sélectionnez vos genres musicaux préférés</legend>
+                    <div>
+                        <input type="checkbox" name="musique[]" id="pop" value="pop">
+                        <label for="pop">Pop</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="musique[]" id="rock" value="rock">
+                        <label for="rock">Rock</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="musique[]" id="punk" value="punk">
+                        <label for="punk">Rock</label>
+                    </div>
+                </fieldset>
             </li>
             <li>
                 <!-- <input type="submit"> -->
