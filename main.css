@@ -51,9 +51,13 @@ form textarea {
     max-width: 100%;
     resize: vertical;
 }
-input[type="checkbox"],
-input[type="radio"] {
+form input[type="checkbox"],
+form input[type="radio"] {
     width: auto;
+}
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+    display: inline;
 }
 form button {
     color: white;
