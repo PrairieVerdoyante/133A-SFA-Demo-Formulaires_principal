@@ -54,6 +54,7 @@ form textarea {
 form input[type="checkbox"],
 form input[type="radio"] {
     width: auto;
+    cursor: pointer;
 }
 form input[type="checkbox"] + label,
 form input[type="radio"] + label {
